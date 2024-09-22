@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.clients-grid {
+  display: flex;
+  flex-wrap: wrap;    /* Allow cards to wrap if there's not enough space */
+  gap: 20px;          /* Space between the cards */
+  justify-content: center;  /* Center the cards */
+  padding: 20px;
+}
+
+.flip-card {
+  width: 200px;       /* Set a fixed width for the cards */
+  height: 250px;      /* Set a fixed height for the cards */
+  perspective: 1000px; /* This is important for the 3D flip effect */
+}

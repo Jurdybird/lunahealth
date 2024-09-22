@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.0",
+    "@mui/material": "^6.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "moment": "^2.30.1",
     "react": "^18.3.1",
+    "react-big-calendar": "^1.14.0",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
   },
@@ -34,5 +41,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
-}
+  },
+      "editor.formatOnSave": true,
+      "eslint.format.enable": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      },
+        "version": "0.2.0",
+        "configurations": [
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Backend",
+            "program": "${workspaceFolder}/lunahealth-backend/index.js",
+            "skipFiles": ["<node_internals>/**"]
+          }
+        ]
+      }
+    
+
